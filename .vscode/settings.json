@@ -1,0 +1,6 @@
+{
+  "laravel-pint.runInLaravelSail": true,
+  "laravel-pint.dirtyOnly": true,
+  "laravel-pint.enable": true,
+  "laravel-pint.enableDebugLogs": true
+}
