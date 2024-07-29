@@ -534,7 +534,8 @@ button {
 }
 
 .hero .content h1 {
-  font-size: 4em;
+  margin-top: 2rem;
+  font-size: 2rem;
   color: #fff;
   text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
   line-height: 1.2;
@@ -593,6 +594,7 @@ button {
 }
 
 .products p {
+
   text-align: center;
   font-size: 2rem;
 }
@@ -605,20 +607,20 @@ button {
 
 .about .row {
   display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 2rem;
 }
 
 .about .row img {
-  flex: 1 1 auto; /* Tambahkan fleksibilitas pada gambar */
+  flex: 1 1 auto;
   max-width: 100%;
   height: auto;
   background-color: #b9c6c8;
+  margin-right: 3rem; /* Tambah jarak antara gambar dan teks */
 }
 
-.about .row .about-img img {
-  width: 100%;
-}
-
-.about .row .content {
+.about .content {
   flex: 1 1 35rem;
   padding: 0 1rem;
 }
@@ -626,6 +628,7 @@ button {
 .about .content h3 {
   font-size: 1.8rem;
   margin-bottom: 1rem;
+  color: white;
 }
 
 .about .content p {
@@ -633,7 +636,10 @@ button {
   font-size: 1.3rem;
   font-weight: 100;
   line-height: 1.6;
+  color: white;
 }
+
+
 
 /* Menu Section */
 .menu {
@@ -684,9 +690,10 @@ button {
 }
 
 /* Products Section */
+/* Default Styles */
 .products .row {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Dua kolom di mobile */
+  grid-template-columns: repeat(2, 1fr); /* Dua kolom di mode default */
   gap: 1.5rem;
   margin-top: 4rem;
 }
@@ -727,14 +734,9 @@ button {
 }
 
 .products .product-image img {
-  height: 10rem;
   cursor: pointer;
-}
-
-.products .product-stars {
-  font-size: 1.5rem;
-  padding: 0.8rem;
-  color: #b6895b;
+  height: 17rem; /* Sesuaikan tinggi gambar di layar kecil */
+  object-fit: cover; /* Pastikan gambar menutupi area tanpa distorsi */
 }
 
 .products .product-price {
@@ -744,9 +746,14 @@ button {
 
 .product-content select {
   margin-top: 10px;
+  margin-bottom: 10px; /* Tambahkan jarak bawah */
   padding: 5px;
   border: 1px solid #ccc;
   border-radius: 4px;
+}
+
+.products .product-card div:nth-child(5) {
+  margin-top: 10px; /* Jarak antara select dan harga */
 }
 
 .product-actions a {
@@ -765,8 +772,90 @@ button {
 
 @media (min-width: 768px) {
   .products .row {
-    grid-template-columns: repeat(4, 1fr); /* Empat kolom di desktop */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Tiga kolom */
+    gap: 1.5rem; /* Jarak antar produk */
+    margin-top: 4rem; /* Jarak atas untuk baris produk */
   }
+
+  .products .product-card {
+    text-align: center;
+    border: 1px solid #666;
+    padding: 2rem;
+    box-sizing: border-box;
+  }
+
+  .products .product-icons {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .products .product-icons a {
+    width: 3.5rem;
+    height: 3.5rem;
+    color: #fff;
+    margin: 1rem;
+    border: 1px solid #666;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .products .product-icons a:hover {
+    background-color: var(--primary);
+    border: 1px solid var(--primary);
+  }
+
+  .products .product-image {
+    padding: 1rem 0;
+  }
+
+  .products .product-image img {
+    height: 12rem; /* Sesuaikan tinggi gambar jika perlu */
+    object-fit: cover; /* Menjaga rasio gambar */
+    margin-bottom: 1rem; /* Jarak bawah gambar */
+  }
+
+  .products .product-price {
+    font-size: 1.3rem;
+    font-weight: bold;
+  }
+
+  .product-content select {
+    margin-top: 10px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  .product-actions a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+
+  .product-actions a:hover {
+    background-color: #0056b3;
+  }
+  .product-content select {
+    margin-top: 10px;
+    margin-bottom: 10px; /* Tambahkan jarak bawah */
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .products .product-card div:nth-child(5) {
+    margin-top: 10px; /* Jarak antara select dan harga */
+  }
+  
 }
 
 /* Contact Section */
@@ -940,6 +1029,40 @@ footer .credit a {
     background-color: var(--primary);
     cursor: pointer;
   }
+  .about .row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 2rem;
+  }
+  
+  .about .row img {
+    flex: 1 1 auto;
+    max-width: 100%;
+    height: auto;
+    background-color: #b9c6c8;
+    margin-right: 3rem; /* Tambah jarak antara gambar dan teks */
+  }
+  
+  .about .content {
+    flex: 1 1 35rem;
+    padding: 0 1rem;
+  }
+  
+  .about .content h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: white;
+  }
+  
+  .about .content p {
+    margin-bottom: 0.8rem;
+    font-size: 1.3rem;
+    font-weight: 100;
+    line-height: 1.6;
+    color: white;
+  }
+  
 }
 
 /* Tablet */
@@ -954,6 +1077,14 @@ footer .credit a {
     color: #fff;
     z-index: 9999;
   }
+
+  .navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+  
 
   .navbar .navbar-nav {
     position: absolute;
@@ -1029,8 +1160,28 @@ footer .credit a {
     padding-top: 0;
   }
 
+  .product-grid {
+    display: flex;
+    overflow-x: auto;
+    padding: 10px;
+  }
+
   .product-card {
-    grid-template-columns: repeat(2, 4fr); /* 2 kolom pada layar sedang */
+    flex: 0 0 auto;
+    width: 100%;
+    max-width: 300px;
+    margin: 10px;
+    text-align: center;
+  }
+
+  .product-card img {
+    width: 100%;
+    height: auto;
+  }
+
+  .product-card h2,
+  .product-card p {
+    margin: 10px 0;
   }
 
   .modal-content {
@@ -1047,17 +1198,140 @@ footer .credit a {
 
 /* Mobile phone */
 @media (max-width: 450px) {
-  html {
-    font-size: 55%;
-  }
-   #hamburger-menu {
-    font-size: 1.2rem; /* Perkecil ukuran tombol hamburger lebih lanjut */
-  }
 
-  .products .product-card {
-    grid-template-columns: 1fr; /* 1 kolom pada layar kecil */
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
   }
 }
+#hamburger-menu {
+  display: inline-block;
+  cursor: pointer;
+  font-size: 1.5rem; /* Perkecil ukuran tombol hamburger */
+  color: #fff;
+  z-index: 9999;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+
+.navbar .navbar-nav {
+  position: absolute;
+  top: 100%;
+  right: -100%;
+  background-color: #fff;
+  width: 30rem;
+  height: 100vh;
+  transition: 0.3s;
+}
+
+.navbar .navbar-nav.active {
+  right: 0;
+}
+
+.navbar .navbar-nav a {
+  color: var(--bg);
+  display: block;
+  margin: 1.5rem;
+  padding: 0.5rem;
+  font-size: 2rem;
+}
+
+.navbar .navbar-nav a::after {
+  transform-origin: 0 0;
+}
+
+.navbar .navbar-nav a:hover::after {
+  transform: scaleX(0.2);
+}
+
+.navbar .fas fa-calculator {
+  width: 90%;
+  right: 2rem;
+}
+
+.about .row {
+  flex-wrap: wrap;
+}
+
+.about .row .about-img img {
+  height: 24rem;
+  object-fit: cover;
+  object-position: center;
+}
+
+.about .row .content {
+  padding: 0;
+}
+
+.about .row .content h3 {
+  margin-top: 1rem;
+  font-size: 2rem;
+}
+
+.about .row .content p {
+  font-size: 1.6rem;
+}
+
+.menu-card-price {
+  font-size: 1.2rem;
+}
+
+.contact .row {
+  flex-wrap: wrap;
+}
+
+.contact .row .map {
+  height: 30rem;
+}
+
+.contact .row form {
+  padding-top: 0;
+}
+
+.products .row {
+  grid-template-columns: 1fr; /* Satu kolom di mode HP */
+  gap: 1rem; /* Jarak antar produk */
+}
+
+.products .product-card {
+  width: 100%; /* Kartu produk memanfaatkan lebar penuh */
+  padding: 1rem; /* Sesuaikan padding di layar kecil */
+}
+
+.products .product-image img {
+  height: 29rem; /* Sesuaikan tinggi gambar jika perlu */
+  object-fit: cover; /* Menjaga rasio gambar */
+  margin-bottom: 1rem; /* Menambah jarak bawah gambar */
+}
+
+.products .product-price {
+  font-size: 1.1rem; /* Ukuran font untuk harga di layar kecil */
+}
+
+.product-content select {
+  font-size: 0.9rem; /* Ukuran font untuk select di layar kecil */
+}
+
+.product-actions a {
+  padding: 8px 12px; /* Sesuaikan padding untuk tombol aksi di layar kecil */
+  font-size: 0.9rem; /* Ukuran font untuk tombol aksi di layar kecil */
+}
+  .footer {
+    bottom: 0;
+  }
+  
+  .main-content {
+    padding-top: 60px; /* Height of navbar */
+    padding-bottom: 40px; /* Height of footer */
+  }
+  
 .menu-card {
   flex: 0 0 calc(50% - 2rem); /* Mengatur lebar agar 2 item per baris di mobile */
   margin: 1rem;
@@ -1089,5 +1363,154 @@ right: 1rem;
 @media (min-width: 768px) {
   .menu-card {
     flex: 0 0 calc(25% - 2rem); /* Kembali ke 4 item per baris di desktop */
+  }
+  /* Aturan CSS untuk memberikan jarak atas pada konten home */
+.home-content {
+  margin-top: 4rem; /* Atur jarak atas sesuai kebutuhan, bisa disesuaikan dengan px, em, atau rem */
+}
+
+/* Untuk konten di hero section, jika ada */
+.hero-content {
+  margin-top: 4rem; /* Atur jarak atas sesuai kebutuhan */
+}
+
+  #hamburger-menu {
+    display: none; /* Sembunyikan ikon hamburger menu */
+  }
+
+  .navbar .navbar-nav {
+    position: static; /* Ubah posisi navbar-nav menjadi statis */
+    display: flex; /* Tampilkan menu secara horizontal */
+    background-color: transparent; /* Pastikan background tidak menutupi konten */
+    height: auto; /* Sesuaikan tinggi menu */
+    width: auto; /* Sesuaikan lebar menu */
+    top: auto; /* Ubah posisi top agar menu berada di tempatnya */
+    right: auto; /* Ubah posisi right agar menu berada di tempatnya */
+    transition: none; /* Nonaktifkan transisi untuk menu */
+  }
+
+  .navbar .navbar-nav.active {
+    display: flex; /* Pastikan menu aktif tetap terlihat */
+  }
+
+  .navbar .navbar-nav a {
+    color: #fff; /* Ubah warna teks menjadi putih */
+    display: inline-block; /* Ubah tampilan link agar terletak sejajar */
+    margin: 1rem; /* Atur jarak antar link */
+    padding: 0.5rem; /* Atur padding untuk link */
+    font-size: 1.2rem; /* Sesuaikan ukuran font link */
+    text-decoration: none; /* Hapus garis bawah pada link */
+  }
+
+  .navbar .navbar-nav a:hover {
+    color: #21a21f; /* Ubah warna teks saat hover, jika diperlukan */
+  }
+
+  .about .row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 2rem;
+  }
+  
+  .about .row img {
+    flex: 1 1 auto;
+    max-width: 100%;
+    height: auto;
+    background-color: #b9c6c8;
+    margin-right: 3rem; /* Tambah jarak antara gambar dan teks */
+  }
+  
+  .about .content {
+    flex: 1 1 35rem;
+    padding: 0 1rem;
+  }
+  
+  .about .content h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: white;
+  }
+  
+  .about .content p {
+    margin-bottom: 0.8rem;
+    font-size: 1.3rem;
+    font-weight: 100;
+    line-height: 1.6;
+    color: white;
+  }
+  
+  .products .row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Tiga kolom */
+    gap: 1.5rem; /* Jarak antar produk */
+    margin-top: 4rem; /* Jarak atas untuk baris produk */
+  }
+
+  .products .product-card {
+    text-align: center;
+    border: 1px solid #666;
+    padding: 2rem;
+    box-sizing: border-box;
+  }
+
+  .products .product-icons {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .products .product-icons a {
+    width: 3.5rem;
+    height: 3.5rem;
+    color: #fff;
+    margin: 1rem;
+    border: 1px solid #666;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .products .product-icons a:hover {
+    background-color: var(--primary);
+    border: 1px solid var(--primary);
+  }
+
+  .products .product-image {
+    padding: 1rem 0;
+  }
+
+  .products .product-image img {
+    height: 12rem; /* Sesuaikan tinggi gambar jika perlu */
+    object-fit: cover; /* Menjaga rasio gambar */
+    margin-bottom: 1rem; /* Jarak bawah gambar */
+  }
+
+  .products .product-price {
+    font-size: 1.3rem;
+    font-weight: bold;
+  }
+
+  .product-content select {
+    margin-top: 10px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  .product-actions a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+
+  .product-actions a:hover {
+    background-color: #0056b3;
   }
 }
