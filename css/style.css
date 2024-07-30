@@ -345,7 +345,7 @@ form input, form button {
   font-size: 1.1rem;
 }
 
-shopping-cart .cart-empty {
+.cart-empty {
   text-align: center;
   margin-top: 20rem;
   display: flex;
@@ -1217,8 +1217,8 @@ footer .credit a {
 
 #hamburger-menu {
     display: block; /* Tampilkan hamburger menu pada layar kecil */
-    width: 5px;    /* Sesuaikan ukuran hamburger menu */
-    height: 5px;   /* Sesuaikan ukuran hamburger menu */
+    width: 30px;    /* Sesuaikan ukuran hamburger menu */
+    height: 30px;   /* Sesuaikan ukuran hamburger menu */
     background-color: black; /* Opsional: Ganti warna background */
     color: white;   /* Opsional: Ganti warna teks */
     font-size: 1.5rem; /* Opsional: Sesuaikan ukuran font */
@@ -1489,11 +1489,6 @@ right: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-
-  .products .product-icons a:hover {
-    background-color: var(--primary);
-    border: 1px solid var(--primary);
   }
 
   .products .product-image {
