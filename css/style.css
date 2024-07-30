@@ -433,6 +433,16 @@ shopping-cart .total-price {
   color: #444; /* Warna label */
 }
 
+.shopping-cart .total-price {
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: center;
+  border-bottom: 1px dashed black;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem; /* Tambahkan padding untuk jarak lebih baik */
+}
+
+
 /* Form checkout */
 .form-container {
   width: 100%;
