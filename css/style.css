@@ -266,7 +266,6 @@ form input, form button {
   top: 0;
   right: -10px;
   scroll-behavior: smooth;
-  cursor: pointer;
 }
 .shopping-cart {
   position: absolute;
@@ -296,7 +295,6 @@ form input, form button {
   padding-bottom: 1rem;
   border-bottom: 1px dashed #666;
   position: relative;
-  cursor: pointer;
 }
 
 .shopping-cart img {
