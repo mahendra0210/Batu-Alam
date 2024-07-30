@@ -358,7 +358,7 @@ form input, form button {
   margin-top: 1rem;
   display: flex;
 }
-.cart-item a:hover {
+.shopping-cart .cart-item a:hover {
   margin-left: 1px;
   color: red;
 }
