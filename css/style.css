@@ -724,11 +724,6 @@ button {
   align-items: center;
 }
 
-.products .product-icons a:hover {
-  background-color: var(--primary);
-  border: 1px solid var(--primary);
-}
-
 .products .product-image {
   padding: 1rem 0;
 }
@@ -760,15 +755,16 @@ button {
   display: inline-block;
   margin-top: 10px;
   padding: 10px 15px;
-  background-color: #007bff;
+  background-color: transparent;
   color: white;
   text-decoration: none;
   border-radius: 5px;
 }
 
 .product-actions a:hover {
-  background-color: #0056b3;
+  background-color: transparent;
 }
+
 
 @media (min-width: 768px) {
   .products .row {
@@ -1483,11 +1479,6 @@ right: 1rem;
     align-items: center;
   }
 
-  .products .product-icons a:hover {
-    background-color: var(--primary);
-    border: 1px solid var(--primary);
-  }
-
   .products .product-image {
     padding: 1rem 0;
   }
@@ -1514,7 +1505,7 @@ right: 1rem;
     display: inline-block;
     margin-top: 10px;
     padding: 10px 15px;
-    background-color: #007bff;
+    background-color: transparent;
     color: white;
     text-decoration: none;
     border-radius: 5px;
