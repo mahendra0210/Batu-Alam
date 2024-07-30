@@ -426,6 +426,13 @@ shopping-cart .total-price {
   color: #666;
 }
 
+/* Untuk menata label harga dan isi */
+.shopping-cart .price-label,
+.shopping-cart .isi-label {
+  font-weight: bold;
+  color: #444; /* Warna label */
+}
+
 /* Form checkout */
 .form-container {
   width: 100%;
