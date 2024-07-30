@@ -374,35 +374,35 @@ shopping-cart .total-price {
 }
 
 /* Gaya untuk harga dan isi pada item di keranjang */
-.item-price {
+.shopping-cart .item-price {
   font-size: 1.2rem;
   color: #333; /* Warna teks harga */
   display: block; /* Menampilkan harga dalam baris terpisah */
   margin-bottom: 0.5rem; /* Ruang di bawah harga */
 }
 
-.item-isi {
+.shopping-cart .item-isi {
   font-size: 1rem;
   color: #d51a1a; /* Warna teks isi */
   display: block; /* Menampilkan isi dalam baris terpisah */
 }
 
 /* Jika Anda ingin menata harga dan isi dalam satu baris */
-.item-details {
+.shopping-cart .item-details {
   display: flex;
   flex-direction: column;
   gap: 0.5rem; /* Jarak antara harga dan isi */
 }
 
 /* Untuk menata label harga dan isi */
-.price-label,
-.isi-label {
+.shopping-cart .price-label,
+.shopping-cart .isi-label {
   font-weight: bold;
   color: #444; /* Warna label */
 }
 
 /* Gaya tambahan untuk item di keranjang belanja */
-.cart-item {
+.shopping-cart .cart-item {
   margin: 2rem 0;
   display: flex;
   align-items: center;
@@ -412,28 +412,28 @@ shopping-cart .total-price {
   position: relative;
 }
 
-.cart-item img {
+.shopping-cart .cart-item img {
   height: 6rem;
   border-radius: 50%;
   margin-top: 2rem;
 }
 
-.cart-item .item-detail {
+.shopping-cart .cart-item .item-detail {
   margin-left: 10px;
 }
 
-.cart-item .item-detail h3 {
+.shopping-cart .cart-item .item-detail h3 {
   font-size: 1.6rem;
   margin: 0 0 0.5rem;
 }
 
-.cart-item .item-detail .item-price,
-.cart-item .item-detail .item-isi {
+.shopping-cart .cart-item .item-detail .item-price,
+.shopping-cart .cart-item .item-detail .item-isi {
   font-size: 1.2rem;
   color: #333;
 }
 
-.cart-item .item-detail .item-isi {
+.shopping-cart .cart-item .item-detail .item-isi {
   font-size: 1rem;
   color: #666;
 }
@@ -1217,8 +1217,8 @@ footer .credit a {
 
 #hamburger-menu {
     display: block; /* Tampilkan hamburger menu pada layar kecil */
-    width: 30px;    /* Sesuaikan ukuran hamburger menu */
-    height: 30px;   /* Sesuaikan ukuran hamburger menu */
+    width: 5px;    /* Sesuaikan ukuran hamburger menu */
+    height: 5px;   /* Sesuaikan ukuran hamburger menu */
     background-color: black; /* Opsional: Ganti warna background */
     color: white;   /* Opsional: Ganti warna teks */
     font-size: 1.5rem; /* Opsional: Sesuaikan ukuran font */
