@@ -279,7 +279,6 @@ form input, form button {
   background-color: #fff;
   transition: 0.3s linear;
   display: none;
-  cursor: pointer;
 }
 
 .shopping-cart.active {
