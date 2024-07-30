@@ -842,8 +842,9 @@ button {
   }
 
   .product-actions a:hover {
-    background-color: #0056b3;
-  }
+  background-color: transparent;
+}
+
   .product-content select {
     margin-top: 10px;
     margin-bottom: 10px; /* Tambahkan jarak bawah */
@@ -1328,6 +1329,10 @@ footer .credit a {
   padding: 8px 12px; /* Sesuaikan padding untuk tombol aksi di layar kecil */
   font-size: 0.9rem; /* Ukuran font untuk tombol aksi di layar kecil */
 }
+.product-actions a:hover {
+  background-color: transparent;
+}
+
   .footer {
     bottom: 0;
   }
@@ -1515,8 +1520,9 @@ right: 1rem;
     border-radius: 5px;
   }
 
-  .product-actions a:hover {
-    background-color: #0056b3;
-  }
+ .product-actions a:hover {
+  background-color: transparent;
+}
+
 }
 
