@@ -363,12 +363,6 @@ form input, form button {
   color: red;
 }
 
-.cart-item #add:hover,
-.cart-item #remove:hover {
-  margin-left: 0; /* Menghilangkan margin tambahan pada hover */
-  color: white; /* Mengembalikan warna teks ke warna asli pada hover */
-}
-
 .total-price {
   font-size: 1.5em;
   font-weight: bold;
