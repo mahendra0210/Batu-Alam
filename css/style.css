@@ -98,16 +98,17 @@ body {
   display: none;
 }
 
+
 #hamburger-menu {
-  display: block; 
-  width: 40px;    
-  height: 40px;   
-  background-color: black; 
-  color: white;   
-  font-size: 1.5rem; 
-  padding: 10px;  
-  cursor: pointer;
-}
+    display: block; 
+    width: 20px;    
+    height: 20px;  
+    background-color: black; 
+    color: white;   
+    font-size: 1.5rem; 
+    padding: 10px; 
+    cursor: pointer;
+  }
 
 /* Sidebar Styles */
 .sidebar {
@@ -344,7 +345,7 @@ form input, form button {
   font-size: 1.1rem;
 }
 
-.cart-empty {
+shopping-cart .cart-empty {
   text-align: center;
   margin-top: 20rem;
   display: flex;
@@ -354,7 +355,7 @@ form input, form button {
   height: 100%;
   color: #010101;
 }
-.cart-item a {
+shopping-cart .cart-item a {
   margin-top: 1rem;
   display: flex;
 }
@@ -363,7 +364,7 @@ form input, form button {
   color: red;
 }
 
-.total-price {
+shopping-cart .total-price {
   font-size: 1.5em;
   font-weight: bold;
   text-align: center;
