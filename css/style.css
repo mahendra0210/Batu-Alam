@@ -1213,13 +1213,17 @@ footer .credit a {
     font-family: Arial, sans-serif;
   }
 }
+
 #hamburger-menu {
-  display: inline-block;
-  cursor: pointer;
-  font-size: 1.5rem; /* Perkecil ukuran tombol hamburger */
-  color: #fff;
-  z-index: 9999;
-}
+    display: block; /* Tampilkan hamburger menu pada layar kecil */
+    width: 30px;    /* Sesuaikan ukuran hamburger menu */
+    height: 30px;   /* Sesuaikan ukuran hamburger menu */
+    background-color: black; /* Opsional: Ganti warna background */
+    color: white;   /* Opsional: Ganti warna teks */
+    font-size: 1.5rem; /* Opsional: Sesuaikan ukuran font */
+    padding: 10px;  /* Opsional: Sesuaikan padding */
+    cursor: pointer;
+  }
 
 .navbar {
   position: fixed;
