@@ -721,11 +721,6 @@ button {
   align-items: center;
 }
 
-.products .product-icons a:hover {
-  background-color: var(--primary);
-  border: 1px solid var(--primary);
-}
-
 .products .product-image {
   padding: 1rem 0;
 }
@@ -761,10 +756,6 @@ button {
   color: white;
   text-decoration: none;
   border-radius: 5px;
-}
-
-.product-actions a:hover {
-  background-color: #0056b3;
 }
 
 @media (min-width: 768px) {
