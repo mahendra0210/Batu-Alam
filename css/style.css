@@ -997,6 +997,7 @@ footer .credit a {
 
 /* Laptop */
 @media only screen and (max-width: 1366px) {
+  @supports (display: flex) {
   html {
     font-size: 75%;
   }
@@ -1062,8 +1063,11 @@ footer .credit a {
   
 }
 
+}
+
 /* Tablet */
 @media only screen and (max-width: 758px) {
+  @supports (display: flex) {
   html {
     font-size: 62.5%;
   }
@@ -1192,10 +1196,11 @@ footer .credit a {
   }
 }
 
+}
 
 /* Mobile phone */
 @media only screen and (max-width: 450px) {
-
+  @supports (display: flex) {
   body {
     margin: 0;
     padding: 0;
@@ -1365,8 +1370,10 @@ position: absolute;
 top: 1rem;
 right: 1rem;
 }
+}
 
 @media only screen and (min-width: 768px) {
+  @supports (display: flex) {
   .menu-card {
     flex: 0 0 calc(25% - 2rem); /* Kembali ke 4 item per baris di desktop */
   }
@@ -1513,6 +1520,8 @@ right: 1rem;
 
  .product-actions a:hover {
   background-color: transparent;
+}
+
 }
 
 }
