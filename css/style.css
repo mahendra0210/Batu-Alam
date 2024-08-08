@@ -996,7 +996,7 @@ footer .credit a {
 /* Media Queries */
 
 /* Laptop */
-@media (max-width: 1366px) {
+@media only screen and (max-width: 1366px) {
   html {
     font-size: 75%;
   }
@@ -1063,7 +1063,7 @@ footer .credit a {
 }
 
 /* Tablet */
-@media (max-width: 758px) {
+@media only screen and (max-width: 758px) {
   html {
     font-size: 62.5%;
   }
@@ -1194,7 +1194,7 @@ footer .credit a {
 
 
 /* Mobile phone */
-@media (max-width: 450px) {
+@media only screen and (max-width: 450px) {
 
   body {
     margin: 0;
@@ -1366,7 +1366,7 @@ top: 1rem;
 right: 1rem;
 }
 
-@media (min-width: 768px) {
+@media only screen and (min-width: 768px) {
   .menu-card {
     flex: 0 0 calc(25% - 2rem); /* Kembali ke 4 item per baris di desktop */
   }
